@@ -4,6 +4,9 @@ language labels and names in a _Bootstrap 3_ project.
 Head over to the [documentation](http://usrz.github.io/bootstrap-languages)
 pages for some hint on how languages are presented, and how to use this library.
 
+This project is distributed under the terms of the
+[Apache Software License, Version 2](LICENSE.md).
+
 Flag Icons
 ==========
 
