@@ -4,6 +4,8 @@
     <title>Languages</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
+    <link rel="shortcut icon" href="favicon.ico" />
+
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css"/>
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css"/>
@@ -12,7 +14,7 @@
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
-    
+
     <style>
       h1            { padding-top: 50px; }
       .mynavigation { padding-top: 70px; }
@@ -23,11 +25,11 @@
         margin-left: 40px;
         margin-right: 40px;
       }
-      
+
       .panel-sample {
         text-align: center;
       }
-      
+
       .panel-sample .dropdown-menu li {
         text-align: left;
         padding: 3px 5px;
@@ -44,20 +46,20 @@
       .panel-code:before {
         content: '';
       }
-      
+
       .panel-code:after {
         content: '';
       }
-      
-      
+
+
       code>b {
         color: #600;
       }
-      
+
       li.list-group-item>a { padding: 0px; }
       li.list-group-item.active>a { color: #fff; }
       li.list-group-item>a:hover { background: none; }
-      
+
     </style>
     <script>
       $(document).ready(function() {
@@ -73,7 +75,7 @@
           a.splice(0, x);
           for (x = a.length; (x > 0) && (a[x - 1].match(/^\s*$/) != null); x --);
           a.splice(x, a.length - x);
-  
+
           /* Calculate the leading whitespace in the code block */
           var w = new Array(1000).join(' ');
           for (x in a) {
@@ -85,7 +87,7 @@
             var l = l.toString();
             if (l.length < w.length) w = l;
           }
-  
+
           /* Remove the leading whitespace in each line */
           if (w.length < 999) for (x in a) a[x] = a[x].substring(w.length);
 
@@ -199,12 +201,12 @@
               </div>
             </div>
           </div>
-      
+
      <!-- + ================================================================ +
           | BASIC USAGE                                                      |
           + ================================================================ + -->
           <h1 id="navigation-2">Basic Usage</h1>
-          
+
           <p>
             In order to use language labels and icons, first of all download
             the latest <a href="languages.min.css" download>CSS</a> and
@@ -280,26 +282,26 @@
               <h1><span class="lang-lg lang-lbl" lang="be"></span>   large in a <code>&lt;h1/&gt;</code> heading</h1>
               <h1><span class="lang-sm lang-lbl" lang="bg"></span>   small in a <code>&lt;h1/&gt;</code> heading</h1>
               <h1><span class="lang-xs lang-lbl" lang="cs"></span> x-small in a <code>&lt;h1/&gt;</code> heading</h1>
-              <hr/>                                                     
+              <hr/>
               <h2><span class="lang-lg lang-lbl" lang="de"></span>   large in a <code>&lt;h2/&gt;</code> heading</h2>
               <h2><span class="lang-sm lang-lbl" lang="el"></span>   small in a <code>&lt;h2/&gt;</code> heading</h2>
               <h2><span class="lang-xs lang-lbl" lang="en"></span> x-small in a <code>&lt;h2/&gt;</code> heading</h2>
-              <hr/>                                                     
+              <hr/>
               <h3><span class="lang-lg lang-lbl" lang="et"></span>   large in a <code>&lt;h3/&gt;</code> heading</h3>
               <h3><span class="lang-sm lang-lbl" lang="fi"></span>   small in a <code>&lt;h3/&gt;</code> heading</h3>
               <h3><span class="lang-xs lang-lbl" lang="fr"></span> x-small in a <code>&lt;h3/&gt;</code> heading</h3>
-              <hr/>                                                     
+              <hr/>
               <h4><span class="lang-lg lang-lbl" lang="hi"></span>   large in a <code>&lt;h4/&gt;</code> heading</h4>
               <h4><span class="lang-sm lang-lbl" lang="hr"></span>   small in a <code>&lt;h4/&gt;</code> heading</h4>
               <h4><span class="lang-xs lang-lbl" lang="hu"></span> x-small in a <code>&lt;h4/&gt;</code> heading</h4>
-              <hr/>                                                     
+              <hr/>
               <h5><span class="lang-sm lang-lbl" lang="it"></span>   small in a <code>&lt;h5/&gt;</code> heading</h5>
               <h5><span class="lang-xs lang-lbl" lang="iw"></span> x-small in a <code>&lt;h5/&gt;</code> heading</h5>
-              <hr/>                                                     
+              <hr/>
               <h6><span class="lang-xs lang-lbl" lang="lv"></span> x-small in a <code>&lt;h6/&gt;</code> heading</h6>
             </div>
           </div>
-      
+
      <!-- + ================================================================ +
           | USAGE IN HEADINGS                                                |
           + ================================================================ + -->
@@ -321,13 +323,13 @@
               <hr/>
               <p><small><span class="lang-sm lang-lbl" lang="sl"></span>   small in a <code>&lt;small/&gt;</code> section</small></p>
               <p><small><span class="lang-xs lang-lbl" lang="sq"></span> x-small in a <code>&lt;small/&gt;</code> section</small></p>
-            </div>                                                 
-          </div>                                                   
-                                                               
+            </div>
+          </div>
+
      <!-- + ================================================================ +
           | USAGE IN BUTTONS                                                 |
           + ================================================================ + -->
-          <h1 id="navigation-7">Usage in buttons</h1>                                
+          <h1 id="navigation-7">Usage in buttons</h1>
 
           <div class="panel panel-default panel-narrow">
             <div class="panel-body panel-sample">
@@ -364,7 +366,7 @@
               </button>
             </div>
           </div>
-      
+
      <!-- + ================================================================ +
           | USAGE IN DROP DOWNS                                              |
           + ================================================================ + -->
