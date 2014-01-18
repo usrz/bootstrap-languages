@@ -1,3 +1,12 @@
+The _Languages for Bootstrap 3_ project provides a simple way to present
+language labels and names in a _Bootstrap 3_ project.
+
+Head over to the [documentation](http://usrz.github.io/bootstrap-languages)
+pages for some hint on how languages are presented, and how to use this library.
+
+Flag Icons
+==========
+
 Flag images have originally made by [IconDrawer](http://www.icondrawer.com),
 then converted and assembled using [ImageMagick](http://www.imagemagick.org/)
 and optimized using [PNGCrush](http://pmt.sourceforge.net/pngcrush/index.html)
