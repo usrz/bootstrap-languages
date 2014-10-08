@@ -7,6 +7,13 @@ pages for some hint on how languages are presented, and how to use this library.
 This project is distributed under the terms of the
 [Apache Software License, Version 2](LICENSE.md).
 
+Install from bower
+==========
+```bash
+bower install bootstrap-language
+```
+
+
 Flag Icons
 ==========
 
