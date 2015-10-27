@@ -1,6 +1,9 @@
 {
     "name": "bootstrap-languages",
-    "main": "languages.min.css",
+    "main": [
+                "languages.min.css",
+                "languages.png"
+            ],
     "version": "1.0.0",
     "homepage": "https://github.com/usrz/bootstrap-languages",
     "authors": [
