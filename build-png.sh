@@ -13,6 +13,10 @@ for alpha2 in sa by bg cz dk de gr gb es ee fi fr ie in hr hu id is it \
     svgs="$svgs $path_to_svg/$alpha3.svg"
 done
 
+# Catalan is a language without a uniq country flag
+wget -qOca.svg https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Catalonia.svg
+svgs="$svgs ca.svg"
+
 # United nation flag is not supported by the country-flag-icons project,
 # so download a copy directly from wikipedia
 wget -qOun.svg https://upload.wikimedia.org/wikipedia/commons/2/2f/Flag_of_the_United_Nations.svg
@@ -25,4 +29,4 @@ montage $svgs -tile 1x -resize 30x22\! -geometry '30x22>+0+0' -gravity NorthWest
 montage  small.png medium.png large.png -mode Concatenate -background transparent -tile 1x4 sprite.png
 pngcrush sprite.png languages.png
 
-rm un.svg small.png medium.png large.png sprite.png
+rm ca.svg un.svg small.png medium.png large.png sprite.png
